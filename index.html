@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>SRKA Zoo</title>
+    <link rel="stylesheet" href="style1.css">
+    <script src="Script1.js"></script>
+</head>
+<body>
+
+    <header>
+        <div class="logo">🦁 SRK ZOO</div>
+        <nav>
+            <ul >
+                <li><a href="#home">Home</a></li>
+                <li><a href="#animals">Animals</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#visit">Visit</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="main">
+        <div class="main-content">
+            <h1>Welcome to WildLife Zoo</h1>
+            <p>Discover the beauty of nature and meet amazing animals!</p>
+            <button onclick="exploreZoo()">Explore Now</button>
+        </div>
+    </section>
+
+    <section id="animals" class="animals">
+        <h2>Our Popular Animals</h2>
+
+        <div class="animal-container">
+
+            <div class="photo">
+                <img src="https://images.unsplash.com/photo-1546182990-dffeafbe841d" alt="Lion">
+                <h3>Lion</h3>
+                <p>The king of the jungle, powerful and majestic.</p>
+                <button onclick="showFact('Lion')">Fun Fact</button>
+            </div>
+
+            <div class="photo">
+                <img src="https://cdn.britannica.com/72/272-050-E1965E27/African-elephant-Kenya.jpg" alt="Elephant">
+                <h3>Elephant</h3>
+                <p>The largest land animal with incredible memory.</p>
+                <button onclick="showFact('Elephant')">Fun Fact</button>
+            </div>
+
+            <div class="photo">
+                <img src="https://img.freepik.com/premium-photo/breathtaking-majestic-giraffe-gracefully-walks-through-african-savannah-its-long-neck-reachi_941265-22651.jpg?w=2000" alt="Giraffe">
+                <h3>Giraffe</h3>
+                <p>The tallest animal in the world.</p>
+                <button onclick="showFact('Giraffe')">Fun Fact</button>
+            </div>
+
+            <div class="photo">
+                <img src="https://cdn.britannica.com/44/254544-050-80DC81AB/cuban-crocodile-Crocodylus-rhombifer.jpg" alt="Crocodile">
+                <h3>Crocodile</h3>
+                <p>Crocodiles are the largest reptiles in the world<br>Crocodiles are semi-aquatic animals</p>
+                <button onclick="showFact('Crocodile')">Fun Fact</button>
+            </div>
+
+            <div class="photo">
+                <img src="https://tse1.mm.bing.net/th/id/OIP.AGXeCDKf2oWz3CuIftj9CwHaE8?pid=Api&P=0&h=180" alt="Tiger">
+                <h3>Tiger</h3>
+                <p>It has a powerful, muscular body with a large head and paws, a long tail and orange fur with black, mostly vertical stripes</p>
+                <button onclick="showFact('Tiger')">Fun Fact</button>
+            </div>
+
+            <div class="photo">
+                <img src="https://tse3.mm.bing.net/th/id/OIP.0VMmUm2oBtRZMGHdZOes5gHaE8?pid=Api&P=0&h=180" alt="Panda">
+                <h3>Panda</h3>
+                <p>Pandas are one of the most beloved animals in the world, known for their distinctive black-and-white markings and gentle nature</p>
+                <button onclick="showFact('Panda')">Fun Fact</button>
+            </div>
+
+        </div>
+    </section>
+
+    <section id="about" class="about">
+        <h2>About Our Zoo</h2>
+        <p>
+            WildLife Zoo is dedicated to wildlife conservation and education. 
+            We provide a safe environment for animals and a fun learning experience for visitors.
+            WildLife Zoo merges ethical conservation with immersive education across 50 acres of naturalistic habitats. Home to 450+ species, we lead global survival programs for endangered wildlife. Every visit supports our mission: protecting biodiversity and rehabilitating animals, ensuring a sustainable future where humans and the natural world thrive together.
+        </p>
+    </section>
+
+    <section id="visit" class="visit-section">
+    <div class="container">
+        <h2 class="section-title">Plan Your Adventure</h2>
+        
+        <div class="visit-grid">
+            <div class="visit-photo" style="background-color: lightgreen;">
+                <div class="icon">🕒</div>
+                <h3>Hours & Location</h3>
+                <p><strong>Open Daily:</strong> 9:00 AM — 6:00 PM</p>
+                <p><strong>Last Entry:</strong> 4:30 PM</p>
+                <p class="address">📍 Green Valley Park, Nature Drive, Sector 12</p>
+            </div>
+
+            <div class="visit-photo" style="background-color: lightgreen;">
+                <div class="icon">🎫</div>
+                <h3>Admission</h3>
+                <ul class="price-list">
+                    <li>Adults (12+) <span>₹2000</span></li>
+                    <li>Children (3-11) <span>₹1500</span></li>
+                    <li>Seniors (65+) <span>₹700</span></li>
+                    <li>Infants (0-2) <span>Free</span></li>
+                </ul>
+            </div>
+
+            <div class="visit-photo highlight" style="background-color: lightgreen;">
+                <div class="icon">💡</div>
+                <h3>Visitor Tips</h3>
+                <p>Wear comfortable walking shoes.</p>
+                <p>Photography is encouraged (no flash).</p>
+                <button class="btn-primary-small" onclick="bookNow()">Book Tickets Now</button>
+            </div>
+        </div>
+    </div>
+</section>
+
+    <footer>
+        <p>© 2026 WildLife Zoo | All Rights Reserved</p>
+    </footer>
+
+</body>
+</html>
