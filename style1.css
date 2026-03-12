@@ -10,7 +10,6 @@ body {
     color: #333;
 }
 
-/* Header */
 header {
     display: flex;
     justify-content: space-between;
@@ -32,24 +31,26 @@ header {
 nav ul {
     list-style: none;
     display: flex;
+    justify-content: center;
 }
 
 nav ul li {
-    margin-left: 25px;
+    margin-left: 25px;justify-content: center;
+    
 }
 
 nav ul li a {
     color: white;
     text-decoration: none;
     transition: 0.3s;
+    justify-content: left;
 }
 
 nav ul li a:hover {
     color: #95d5b2;
 }
 
-/* Hero Section */
-.hero {
+.main {
     height: 90vh;
     background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)),
                 url("https://images.unsplash.com/photo-1502082553048-f009c37129b9");
@@ -62,17 +63,17 @@ nav ul li a:hover {
     color: white;
 }
 
-.hero h1 {
+.main h1 {
     font-size: 50px;
     margin-bottom: 20px;
 }
 
-.hero p {
+.main p {
     font-size: 20px;
     margin-bottom: 20px;
 }
 
-.hero button {
+.main button {
     padding: 12px 30px;
     font-size: 16px;
     border: none;
@@ -83,12 +84,11 @@ nav ul li a:hover {
     transition: 0.3s;
 }
 
-.hero button:hover {
+.main button:hover {
     background: #40916c;
     transform: scale(1.1);
 }
 
-/* Animals Section */
 .animals {
     padding: 60px 50px;
     text-align: center;
@@ -106,7 +106,7 @@ nav ul li a:hover {
     flex-wrap: wrap;
 }
 
-.card {
+.photo {
     background: white;
     width: 300px;
     border-radius: 15px;
@@ -115,25 +115,25 @@ nav ul li a:hover {
     transition: 0.4s;
 }
 
-.card:hover {
+.photo:hover {
     transform: translateY(-10px);
 }
 
-.card img {
+.photo img {
     width: 100%;
     height: 220px;
     object-fit: cover;
 }
 
-.card h3 {
+.photo h3 {
     margin: 15px 0 10px;
 }
 
-.card p {
+.photo p {
     padding: 0 15px 15px;
 }
 
-.card button {
+.photo button {
     margin-bottom: 20px;
     padding: 8px 20px;
     border: none;
@@ -144,11 +144,10 @@ nav ul li a:hover {
     transition: 0.3s;
 }
 
-.card button:hover {
+.photo button:hover {
     background: #2d6a4f;
 }
 
-/* About Section */
 .about {
     padding: 60px;
     background: #d8f3dc;
@@ -159,7 +158,6 @@ nav ul li a:hover {
     margin-bottom: 20px;
 }
 
-/* Visit Section */
 .visit {
     padding: 60px;
     text-align: center;
@@ -193,7 +191,7 @@ nav ul li a:hover {
     margin-top: 30px;
 }
 
-.visit-card {
+.visit-photo {
     background: #fdfdfd;
     border: 1px solid #eee;
     padding: 30px;
@@ -206,17 +204,17 @@ nav ul li a:hover {
     transition: transform 0.3s ease;
 }
 
-.visit-card:hover {
+.visit-photo:hover {
     transform: translateY(-5px);
     box-shadow: 0 10px 20px rgba(0,0,0,0.05);
 }
 
-.visit-card h3 {
+.visit-photo h3 {
     margin: 15px 0;
-    color: var(--primary); /* Using the Jungle Green from before */
+    color: var(--primary); 
 }
 
-.visit-card .icon {
+.visit-photo .icon {
     font-size: 2.5rem;
 }
 
@@ -233,9 +231,9 @@ nav ul li a:hover {
     border-bottom: 1px dashed #ddd;
 }
 
-.visit-card.highlight {
+.visit-photo.highlight {
     background: #f9fbf9;
-    border: 2px solid var(--accent); /* Using the Golden Amber */
+    border: 2px solid var(--accent); 
 }
 
 .btn-primary-small {
@@ -254,7 +252,6 @@ nav ul li a:hover {
     background: #d49400;
 }
 
-/* Footer */
 footer {
     background: #1b4332;
     color: white;
